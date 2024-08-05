@@ -68,7 +68,7 @@ const server = http.createServer(app);
 // Create Socket.io server with CORS options
 const io = new Server(server, {
   cors: {
-    origin: 'https://your-client-domain.vercel.app', // Replace with your client domain
+    origin: 'https://chat-app-phi-amber-47.vercel.app/', // Replace with your client domain
     methods: ['GET', 'POST']
   }
 });
