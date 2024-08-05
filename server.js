@@ -49,7 +49,7 @@ const app = express();
 
 // Use CORS middleware for Express
 app.use(cors({
-  origin: 'https://your-client-domain.vercel.app', // Replace with your client domain
+  origin: 'http://localhost:3000/', // Replace with your client domain
   methods: ['GET', 'POST']
 }));
 
