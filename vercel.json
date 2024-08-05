@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "name": "chat-application",
     "builds": [
       {
         "src": "server.js",
