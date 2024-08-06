@@ -68,12 +68,12 @@ textarea{
 }
 
 .recieving{
-    background: #8f8beb;
+    background: #8e89f8;
     color: #fff;
 }
 .sending{
-    background: #e9eafd;
-    color: #67676e;
+    background: #8c8ce2;
+    color: #ffffff;
     margin-left: auto;
 }
 .messages h4{
