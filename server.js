@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
-const http = require('http').createServer(app)
+const http = require('http')
+const Server = http.createServer(app)
+const socketTo = require('socket.io')
 
 
 app.use(express.static(__dirname + '/public'))
@@ -10,7 +12,13 @@ app.get('/', (req, res) => {
 })
 
 // Socket 
-const io = require('socket.io')(http)
+// const io = require('socket.io')(http)
+const io = socketTo(Server , {
+  cors:{
+    origin:'*',
+    methods: ['GET','POST']
+  }
+})
 
 io.on('connection', (socket) => {
   console.log('Connected...')
@@ -21,7 +29,7 @@ io.on('connection', (socket) => {
 })
 const PORT = process.env.PORT || 3000
 
-http.listen(PORT, () => {
+Server.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
 
