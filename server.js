@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 // const io = require('socket.io')(http)
 const io = socketTo(Server , {
   cors:{
-    origin:`https://chat-app-phi-amber-47.vercel.app/`,
+    origin:`*`,
     methods: ['GET','POST']
   }
 })

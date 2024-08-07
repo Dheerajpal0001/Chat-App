@@ -1,5 +1,4 @@
-// const socket = io(`http://localhost:3000/`);
-const socket = io(`https://chat-app-phi-amber-47.vercel.app/`);
+const socket = io();
 
 let user;
 let textarea = document.querySelector("#textarea");
