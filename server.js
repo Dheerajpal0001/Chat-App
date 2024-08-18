@@ -20,9 +20,6 @@ io.on('connection', (socket) => {
   socket.on('message', (msg) => {
     socket.broadcast.emit('message', msg)
   })
-  socket.on("disconnect", (data) => {
-    socket.broadcast.emit('disconnect', data);
-  });
 })
 
 Server.listen(process.env.PORT, () => {
