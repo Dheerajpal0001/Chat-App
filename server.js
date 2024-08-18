@@ -22,7 +22,7 @@ io.on('connection', (socket) => {
   })
 })
 
-Server.listen(process.env.PORT, () => {
+Server.listen(process.env.PORT || 3000, () => {
     console.log(`Listening on port http://localhost:${process.env.PORT}`)
 })
 

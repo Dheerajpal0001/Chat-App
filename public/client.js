@@ -1,4 +1,5 @@
-const socket = io();
+
+const socket = io(`http://localhost:3000/`);
 
 let user;
 let textarea = document.querySelector("#textarea");
