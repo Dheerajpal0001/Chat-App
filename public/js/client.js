@@ -1,5 +1,5 @@
 
-const socket = io(`https://ubiquitous-cheesecake-0fda11.netlify.app`,{transports:['websocket']});
+const socket = io(``,{transports:['websocket']});
 
 let user;
 let textarea = document.querySelector("#textarea");
