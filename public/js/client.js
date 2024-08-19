@@ -1,5 +1,5 @@
 
-const socket = io(`http://localhost:3000/`,{transports:['websocket']});
+const socket = io(`https://chat-90oem2vyf-dheeraj-pals-projects.vercel.app/`,{transports:['websocket']});
 
 let user;
 let textarea = document.querySelector("#textarea");
