@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 const io = socketTo(Server)
 
 io.on('connection', (socket) => {
-  console.log('Connected...')
+  // console.log('Connected...')
   socket.on('message', (msg) => {
     socket.broadcast.emit('message', msg)
   })
