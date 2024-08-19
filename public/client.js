@@ -1,5 +1,4 @@
-
-const socket = io(`https://dancing-medovik-dff34e.netlify.app/`);
+const socket = io();
 
 let user;
 let textarea = document.querySelector("#textarea");
